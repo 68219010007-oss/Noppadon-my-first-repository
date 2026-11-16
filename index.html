@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noppadon | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #080b09;
+            color: #ffffff;
+        }
+
+        /* NAVBAR */
+        header {
+            width: 100%;
+            padding: 22px 9%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #202820;
+            background: #080b09;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #a4bd8e;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: #cccccc;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #a4bd8e;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 12%;
+            gap: 50px;
+        }
+
+        .hero-content {
+            max-width: 650px;
+        }
+
+        .subtitle {
+            color: #a4bd8e;
+            letter-spacing: 4px;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 58px;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        h1 span {
+            color: #a4bd8e;
+        }
+
+        .job {
+            font-size: 20px;
+            color: #dddddd;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            color: #999999;
+            font-size: 15px;
+            line-height: 1.9;
+            margin-bottom: 35px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 30px;
+            background: #a4bd8e;
+            color: #080b09;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #c1d5ae;
+            transform: translateY(-3px);
+        }
+
+        /* PROFILE */
+        .profile {
+            width: 300px;
+            height: 350px;
+            background: #151c16;
+            border: 1px solid #a4bd8e;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            box-shadow: 0 0 40px rgba(164, 189, 142, 0.08);
+        }
+
+        .profile span {
+            font-size: 80px;
+            font-weight: bold;
+            color: #a4bd8e;
+        }
+
+        /* BOTTOM */
+        .bottom {
+            border-top: 1px solid #202820;
+            padding: 25px;
+            text-align: center;
+            color: #666666;
+            font-size: 13px;
+        }
+
+        @media (max-width: 800px) {
+            header {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 12px;
+            }
+
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding: 60px 7%;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            .profile {
+                width: 220px;
+                height: 250px;
+            }
+
+            .profile span {
+                font-size: 65px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">NOPPADON.</div>
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="subtitle">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>
+                Hello, I'm<br>
+                <span>Noppadon</span>
+            </h1>
+
+            <p class="job">IT Student & Web Developer</p>
+
+            <p class="description">
+                สวัสดีครับ ผมชื่อนพดล แตงกลับ<br>
+                นักเรียนระดับ ปวช.2 สาขาเทคโนโลยีสารสนเทศ<br>
+                วิทยาลัยเทคนิคสิงห์บุรี<br>
+                มีความสนใจด้านเทคโนโลยี การเขียนโปรแกรม
+                และการพัฒนาเว็บไซต์
+            </p>
+
+            <a href="#about" class="btn">ABOUT ME</a>
+
+        </div>
+
+        <div class="profile">
+            <span>NJ</span>
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" style="padding: 50px 12%; background: #101610;">
+        <h2 style="color: #a4bd8e; margin-bottom: 15px;">ABOUT ME</h2>
+        <p style="color: #999; line-height: 1.8;">
+            ผมเป็นนักเรียนสายเทคโนโลยีสารสนเทศ
+            ที่ชื่นชอบการเรียนรู้เกี่ยวกับคอมพิวเตอร์
+            และการสร้างสรรค์ผลงานด้านเทคโนโลยี
+        </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" style="padding: 40px 12%; text-align: center;">
+        <h2 style="color: #a4bd8e;">CONTACT</h2>
+        <p style="color: #999; margin-top: 10px;">
+            Thank you for visiting my portfolio.
+        </p>
+    </section>
+
+    <footer class="bottom">
+        © 2026 Noppadon Tangklub. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
